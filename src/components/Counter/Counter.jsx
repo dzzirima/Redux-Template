@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { increase } from '../../redux/ducks/counter';
+import { decrease, increase } from '../../redux/ducks/counter';
 
 export const Counter = () => {
     const dispatch = useDispatch();
@@ -9,6 +9,9 @@ export const Counter = () => {
         // remember to actually call the function here otherwise boom
         dispatch(increase())
     }
+    const handleDecrease = () =>{
+        dispatch(decrease())
+    }
 
     return (
         <div>
@@ -16,7 +19,7 @@ export const Counter = () => {
 
             <button onClick = {handleIncrease}> Add</button>
             <br/>
-            <button>Decrease</button>
+            <button onClick = {handleDecrease}>Decrease</button>
         </div>
     )
 }
