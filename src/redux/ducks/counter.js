@@ -3,7 +3,7 @@
 
 //1. initialise the state
 let initialState = {
-    count:0
+    count:10
 }
 
 
