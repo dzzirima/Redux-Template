@@ -7,7 +7,7 @@ let initialState = {
 }
 
 
-//2.create your name reducers
+//2.create your name reducers // for switch statements
 const INCREASE = 'increase'
 
 //3.create an action  which maps directly to the const above
